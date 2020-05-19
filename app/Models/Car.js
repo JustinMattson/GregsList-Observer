@@ -1,17 +1,17 @@
 export default class Car {
   constructor(data) {
-    console.log("from the car model");
-    this.id = data._id
-    this.make = data.make
-    this.model = data.model
-    this.description = data.description || "No Description Provided"
-    this.imgUrl = data.imgUrl
-    this.price = data.price
-    this.year = data.year
+    //console.log("from the car model");
+    this.id = data._id;
+    this.make = data.make;
+    this.model = data.model;
+    this.description = data.description || "No Description Provided";
+    this.imgUrl = data.imgUrl;
+    this.price = data.price;
+    this.year = data.year;
   }
 
   get Template() {
-    return /*html*/`
+    return /*html*/ `
     <div class="col-4">
                 <div class="card">
                     <img class="card-img-top" src="${this.imgUrl}" alt="">
@@ -27,6 +27,6 @@ export default class Car {
                         </button>
                     </div>
                 </div>
-            </div>`
+            </div>`;
   }
 }
