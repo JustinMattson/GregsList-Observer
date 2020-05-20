@@ -1,11 +1,13 @@
 import Value from "./Models/Value.js";
 import House from "./Models/House.js";
 import Job from "./Models/Job.js";
+import Cars from "./Models/Car.js";
 
 let _state = {
   activeValue: new Value({ title: "Value" }),
   /** @type {Value[]} */
   values: [],
+  /** @type {Cars[]} */
   cars: [],
   /** @type {House[]} */
   houses: [],

@@ -28,10 +28,13 @@ export default class JobsController {
     JobsService.addJob(newJobObj);
     formData.reset();
   }
+  removeJob(id) {
+    JobsService.removeJob(id);
+  }
 
   // TODO apply does not work
   apply(id) {
     console.log("apply controller > service");
-    //JobsService.apply(id);
+    JobsService.apply(id);
   }
 }
