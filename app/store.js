@@ -1,4 +1,6 @@
 import Value from "./Models/Value.js";
+import House from "./Models/House.js";
+import Job from "./Models/Job.js";
 
 let _state = {
   activeValue: new Value({ title: "Value" }),
@@ -7,6 +9,8 @@ let _state = {
   cars: [],
   /** @type {House[]} */
   houses: [],
+  /** @type {Job[]} */
+  jobs: [],
 };
 
 /** Collection of listeners to be called based on keyed state changes
@@ -17,6 +21,7 @@ let _listeners = {
   values: [],
   cars: [],
   houses: [],
+  jobs: [],
 };
 
 //NOTE You should not need to change the code from this point down

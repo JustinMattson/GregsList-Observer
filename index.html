@@ -29,6 +29,71 @@
       </div>
     </header>
     <main class="container-fluid bg-secondary">
+        <div class="row m-3">
+            <!-- JOBS FORM -->
+            <div class="offset-3 col-6">
+                <form onsubmit="app.JobsController.addJob(event)">
+                    <div class="form-group">
+                      <label for="jobTitle"></label>
+                      <input 
+                        type="text" 
+                        class="form-control" 
+                        id="jobTitle" 
+                        placeholder="Job Title..."
+                      >
+                      <label for="Compnay"></label>
+                      <input 
+                        type="text" 
+                        class="form-control" 
+                        id="company" 
+                        placeholder="Company..."
+                      >
+                      <label for="hours"></label>
+                      <input 
+                        type="text" 
+                        class="form-control" 
+                        id="hours" 
+                        placeholder="Hours/week..."
+                      >
+                      <label for="rate"></label>
+                      <input 
+                        type="text" 
+                        class="form-control" 
+                        id="rate" 
+                        placeholder="Hourly Rate..."
+                      >
+                      <label for="description"></label>
+                      <input 
+                        type="text" 
+                        class="form-control" 
+                        id="description" 
+                        placeholder="Job Description..."
+                      >
+                    </div>
+                    <button type="submit" class="btn btn-primary">Add Job</button>
+                </form>
+            </div>
+            <!-- END JOBS FORM -->
+        </div>
+        <div id="jobs" class="row">
+        <!-- JOB TEMPLATE -->
+        <!-- <div class="col-12 col-md-4">
+            <div class="card">
+                <h5 class="card-header">${this.company}</h5>
+                <div class="card-body">
+                  <h5 class="card-title p-2">${this.jobTitle}</h5>
+                  <p class="card-text">${this.description}</p>
+                  <div class="d-flex justify-content-between m-0">
+                      <span>
+                        <button class="btn btn-primary" onclick="app.jobController.apply(${this.id})">Apply</button></span>
+                      <span class="small text-right">Hours/week: ${this.hours} <p> Rate/hr: ${this.rate}</p></span>
+                  </div>
+                </div>
+              </div>
+        </div> -->
+        <!-- END JOB TEMPLATE -->
+        </div>
+
         <!-- HOUSES FORM -->
         <div class="offset-3 col-6">
             <form onsubmit="app.housesController.addHouse(event)">
@@ -87,8 +152,8 @@
                 Add to Houses!
               </button>
             </form>
-          </div>
-          <!-- END HOUSES FORM -->
+        </div>
+        <!-- END HOUSES FORM -->
 
       <div id="houses" class="row"></div>
       <div class="row">
